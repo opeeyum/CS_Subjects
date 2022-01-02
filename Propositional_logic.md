@@ -1,17 +1,17 @@
-# What is a Proposition?
+# 1. What is a Proposition?
 Any statement that is either true or false, is termed as proposition.
 
 There are two laws regarding proposition as follows:
-#### 1. Law of excluded middle
+#### - Law of excluded middle
 This law states that a proposition is required to be either true or false but not both.
 
-#### 2. Law of contradiction
+#### - Law of contradiction
 ```
 True = not False
 False = not True
 ```
 
-## Types of proposition:
+## 2. Types of proposition:
 
 #### - Atomic Proposition
 Any proposition which cannot be further divded is termed as atomic proposition.
@@ -21,19 +21,52 @@ One or more atomic proposition combined to form a compound proposition using **c
 
 **Note**:- `Both atomic and compund Proposition's are generally termed as Premises`.
 
-## What is Argument?
-Collection of Premises on the basis of which we derive a conclusion is termed as Arguement.
+## 3. What is Argument?
+Collection of Premises on the basis of which we derive a conclusion is termed as Argument.
 
-![](https://github.com/opeeyum/CS_subjects/blob/6814fbabf2a7a0ea111a50a3e9f2202651dc777a/Images/argurement_discrete.png)
+![](/Images/argurement_discrete.png)
 
-## Connectors / Operators
+## 3. Connectors / Operators
 
-### Negation
-It is a NOT of digital electronics.
+### a. Negation (~)
+>It is a NOT of digital electronics.
 
-![](https://github.com/opeeyum/CS_subjects/blob/4495681df0d6380fa0170715cba68bef1e220d51/Images/negation_discrete.png)
+![](Images/negation_discrete.png)
 
-### Disjunction
-It is a OR of digital electronics.
+### b. Disjunction (v)
+>It is a OR of digital electronics.
 
-![](https://github.com/opeeyum/CS_subjects/blob/4495681df0d6380fa0170715cba68bef1e220d51/Images/disjuction_discrete.png)
+![](/Images/disjuction_discrete.png)
+
+### c. Conjunction (^)
+>It is AND of Digital Electronics
+
+![](/Images/conjuction_discrete.png)
+
+### d. Implication (->)
+>It is also an binary operator. P -> Q, is read as **If P then Q**.
+
+With truth table as follows:
+
+![](/Images/implication_discrete.png)
+
+P -> Q = ~p v Q ``If P then Q is equal to Not P OR Q``
+
+## 5. Converse, Inverse & Contrapositive
+![](/Images/cic_discrete.png)
+![](/Images/cic_2_discrete.png)
+
+## Types of Propositions WRT their logical structure
+#### - Tautology
+A propositional function which is true in every possible case. A tautology is also termed as Valid statement.
+
+#### - Contradiction
+A propositional function which is false in every possible case.
+
+#### - Contingency
+A propositional function which is some time true and sometime false.
+
+## 6. Satisfiability
+A statement or a propsoition is said to be satisfiable if its truth table has **atleast one true value**, otherwise statement is unsatisfiable.
+
+`Clearly, Tautology and Contingency are satisfiable whereas Contradiction is unsatisfiable.`
