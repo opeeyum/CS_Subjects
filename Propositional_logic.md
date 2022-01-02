@@ -52,11 +52,15 @@ With truth table as follows:
 
 P -> Q = ~p v Q ``If P then Q is equal to Not P OR Q``
 
+### e. Bidirectional operator (<->)
+- If sigifies if and only if (i.e iff)
+- Work as Ex-NOR of digital electronics
+
 ## 5. Converse, Inverse & Contrapositive
 ![](/Images/cic_discrete.png)
 ![](/Images/cic_2_discrete.png)
 
-## Types of Propositions WRT their logical structure
+## 6. Types of Propositions WRT their logical structure
 #### - Tautology
 A propositional function which is true in every possible case. A tautology is also termed as Valid statement.
 
@@ -66,7 +70,7 @@ A propositional function which is false in every possible case.
 #### - Contingency
 A propositional function which is some time true and sometime false.
 
-## 6. Satisfiability
+## 7. Satisfiability
 A statement or a propsoition is said to be satisfiable if its truth table has **atleast one true value**, otherwise statement is unsatisfiable.
 
 `Clearly, Tautology and Contingency are satisfiable whereas Contradiction is unsatisfiable.`
