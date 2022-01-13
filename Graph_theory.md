@@ -33,26 +33,51 @@ Number of edges is the size of given graph.
 ### - Adjacency matrix
 ![](/Images/adjacency_matrix.png)
 
-## Degree of Vertex
+## 4. Degree of Vertex
 - Total number of edges incident to any vertex is its degree.
 - In case of adjacency matrix representation, sum of values in row gives degree of vertex.
 
 > If degree of all the vertices in the graph is equal then graph is termed as **REGULAR GRAPH**.
 
-## Hand-Shaking Lemma
+## 5. Hand-Shaking Lemma
    In any graph G(V, E) the sum of degree of vertices is twice the number of edges.
    
 ![](/Images/degree_sum_formula.png)
 
 ``` - Number of odd degree vertices are even.```
 
-## Complete Graph
+## 6. Havel Hakimi theorem
+1. **Degree Sequence** - The degree sequence of an undirected graph is the non-increasing sequence of its vertex degrees.
+2. Havel Hakimi theorem checks whether for given degree-sequence, any **SIMPLE GRAPH** exists or not.
+- Algorithm:
+  - Sort the degree-sequence in non-increasing order.
+  - Delete the first element(say V). Subtract 1 from the next V elements.
+  - Repeat 1 and 2 until one of the stopping conditions is met.
+- Stopping conditions: 
+  - All the remaining degree(s) are equal to 0 **Simple graph exists**.
+  - Negative number encounter after subtraction **No simple graph exists**.
+
+## 7. Complete Graph
 - Two vertices are said to be adjacent if they are connected through atleast one edge.
 - Now, if in a given **Simple graph** every pair of vertices is adjacent then graph is termed as **COMPLETE GRAPH**.
 
 > The complete graph on ***n*** vertices is denoted by K*n*.
 
 ![](/Images/complete_graph.png)
+
+## 8. Difference between Walk, Trail, Path, Circuit and Cycle
+1. Walk - Traversal of graph such that repetition of Edge and Vertex both is allowed.
+  - If Walk starts and ends in same vertex then that walk is termed as **Closed Walk**.
+2. Trail - Traversal of graph such that repetition of **edge(s)** is(are) not allowed.
+```
+Closed Trail is termed as Circuit.
+```
+
+3. Path - Traversal of graph such that repetition of **vertex(vertices)** is(are) not allowed.
+```
+Closed Path is termed as Cycle.
+```
+
 
 
   
