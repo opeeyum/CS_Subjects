@@ -80,10 +80,14 @@ Closed Path is termed as Cycle.
 ## 9. Types of Simple Graph
 1. Null Graph(N*n*): A graph with *n* vertices and zero edges is Null Graph.
 2. Cyclic Graph(C*n*, n>=3):  The cycle graph is a simple graph with 'n' vertices {V1, V2, ..., Vn} and edges {V1, V2}, {V2, V3}, ..., {Vn, V1}.
+```
+A Cyclic graph will always be Regular.
+A Cyclic graph with Even number of Vertices will always be Bipartite.
+```
 3. Bipartite Graph = A Graph G = (V, E) is bipartite if the Vertex set can be partitioned into sets V1 and V2 such that every edge is between a vertex of V1 and V2.
   - Degree of Bipartite graph == **max(m, n)**, where **m** and **n** are number of vertices in V1 and V2.
   - Maximum edges possible = ![](/Images/max_edge_in_bg.png)
-5. Complete Bipartite Graph(K*m*, n) = A Bipartite graph in which every vertex in V1 is adjacent to every vertex in V2 set.
+4. Complete Bipartite Graph(K*m*, n) = A Bipartite graph in which every vertex in V1 is adjacent to every vertex in V2 set.
 
   
   
