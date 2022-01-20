@@ -74,3 +74,22 @@ A propositional function which is some time true and sometime false.
 A statement or a propsoition is said to be satisfiable if its truth table has **atleast one true value**, otherwise statement is unsatisfiable.
 
 `Clearly, Tautology and Contingency are satisfiable whereas Contradiction is unsatisfiable.`
+
+## 8. Precedence of Operators
+![](/Images/precedence.jpg)
+
+## 9. Quantifiers
+First we have to understand the concept of **Predicates**. One of the downside of propositonal-logic is that we cannot restrict the domain of the subject, predicate's help us to do so.
+
+**Predicate are wriitten as P(x)**, where P is the logic and x is the subject.
+
+Predicates are used alongside quantifiers to express the extent to which a predicate is true over a range(domain) of elements. 
+
+There are two types of quantifiers:
+1. Universal Quantifier
+2. Existential Quantifier
+
+### Some Properties of Quantifiers
+![](/Images/quantifiers_equivalence.jpg)
+![](/Images/quantifiers_equivalence2.jpg)
+![](/Images/quantifiers_negation.jpg)
