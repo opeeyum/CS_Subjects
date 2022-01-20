@@ -91,5 +91,5 @@ There are two types of quantifiers:
 
 ### Some Properties of Quantifiers
 ![](/Images/quantifiers_equivalence.jpg)
-![](/Images/quantifiers_equivalence2.jpg)
+![](/Images/qunatifiers_equivalence2.jpg)
 ![](/Images/quantifiers_negation.jpg)
