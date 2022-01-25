@@ -11,7 +11,7 @@ Number of vertices is the order of given graph.
 Number of edges is the size of given graph.
 
 ### - Loops
-  Edges having same end points.
+  Edges having same starting and end points.
 
 ### - Multi Edges
   Two or more edges having same end points.
