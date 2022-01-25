@@ -4,29 +4,43 @@ Matrix is simply a multidimensional array.
 - **If m != n, Rectanguar Matrix**
 - **If m == n, Square Matrix**
 
-### Unit Matrix
+### 1. Unit Matrix
 A ***Square Matrix*** whose all Principal Diagonal matrix are equal to 1, and remaing elements are 0.
 
-### Null Matrix 
+### 2. Null Matrix 
 A ***Square or Non-Square*** (rectangular) matrix with all elements equal to 0 is termed as Null Or ***Zero*** matrix.
 
-### Row Matrix
+### 3. Row Matrix
 Matrix having only ***1 Row***.
 
-### Column Matrix
+### 4. Column Matrix
 Matrix having only ***1 Column***.
 
-### Sub-Matrix
+### 5. Sub-Matrix
 Any matrix obtained by omitting some rows and Columns from a given, (m X n) matrix 'A', is called Sub-matrix of 'A'.
 
 #### Principal Sub-Matrix
 A ***Square Sub-matrix*** of a Square matrix 'A' is called Principal Sub-matrix, if its (sub-matrix) diagonal elements are also the diagonal elements of matrix 'A'.
 
-### Equality of Matrix
+### 6. Equality of Matrix
 Two or more matrices are said to be Equal if they are of:
 1. Same Size, order should be same.
 2. The Elements in the corresponding places are same.
 
+## Types of Square Matrix
+### 1. Upper Triangular Matrix
+A Square matrix, A = \[a *i j* ] is called an upper triangular matrix if a\[ i ]\[ j ] = 0, whenever i > j.
+
+### 2. Lower Triangular Matrix
+A Square matrix, A = \[a *i j* ] is called a lower triangular matrix if a\[ i ]\[ j ] = 0, whenever i < j.
+
+- A Triangular matrix A = \[a *i j* ] *m x n* is called Strictly triangular matrix if a\[ i ]\[ i ] = 0, for i = 1, 2, ..., n.
+
+### 3. Diagonal Matrix
+A Square matrix, A = \[a *i j* ]*n x n* whose elements above and below the principal diagonal are all zero.
+
+### 4. Scalar Matrix
+A diagonal matrix whose diagonal elements are all equal is called a Scalar matrix.
 
 ## Addition of Matrices
 Addition of Matrices is only possible when matrices are ***Conformable***, i.e Same Size.
@@ -40,15 +54,15 @@ Addition of Matrices is only possible when matrices are ***Conformable***, i.e S
    - A + B = A + C -> B = C
    - B + A = C + A -> B = C
 
-## Substraction of Matrices
-Substaction of Matrices is only possible when matrices are ***Conformable***, i.e Same Size.
+## Subtraction of Matrices
+Subtaction of Matrices is only possible when matrices are ***Conformable***, i.e Same Size.
 A - B = A + (-B)
 
 > Properties of addition also holds in Subtraction.
 
 ## Scalar multiplication of Matrix
-If A = \[a*ij*]*m x n*, then
-- K * A = A * K = \[K a*ij*]*m x n*
+If A = \[a *i j* ]*m x n*, then
+- K * A = A * K = \[K a *i j*]*m x n*
 
 ### Properties of Scalar Multiplication
 1. K * (A + B) = KA + KB
@@ -57,7 +71,8 @@ If A = \[a*ij*]*m x n*, then
 4. (-K) * A = -(K * A) = K * (-A)
 
 ## Multiplication of Matrices
-Multiplication of matrices is only possible when they are ***multiplication conformable***, that is  - number of column in frist matrix should be equal to number of rows in second matrix.
+Multiplication of matrices is only possible when they are ***multiplication conformable***, that is - `number of column in first matrix should be equal to number of rows in second matrix.`
+- Each element of i*th* row in first matrix is multiplied with corressponding element of i*th* column in second matrix, and the summation of each multiplication is the i*th* element of the resultant matrix. 
 
 ### Properties of matrix multiplication
 1. Matrix multiplication is Associative (A * B) * C = A * (B * C)
@@ -67,9 +82,7 @@ Multiplication of matrices is only possible when they are ***multiplication conf
    - If AB == -BA, then the matrices are said to be **anti-commute**.
 4. The equation AB = 0, does not necessarily imply that one of the matrices 'A' and 'B' must be a Zero matrix.
    - If AB = 0, then it does not necessarily imply that BA = 0.
-
-
-
+5. If A is an m x n matrix, I*n* denotes the n-rowed unit matrix, it can be easily seen that: A * I*n* = A = I*m* * A
 
 
 
