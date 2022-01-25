@@ -84,6 +84,21 @@ Multiplication of matrices is only possible when they are ***multiplication conf
    - If AB = 0, then it does not necessarily imply that BA = 0.
 5. If A is an m x n matrix, I*n* denotes the n-rowed unit matrix, it can be easily seen that: A * I*n* = A = I*m* * A
 
+## Echelon Form
+A matrix A of order m x n is said to be in row echelon form if:
+1. Zero rows (If any occur) then they must be below the non-zero rows.
+2. The number of Zeros before the first non-zero elements in each row is less than the number of such zeros in the next non-zero row. 
+
+**If a Matrix is in Row Echelon form then, Rank of matrix = Number of Non-Zero Rows.**
+
+## Key Points
+1. If 'A' is a square matrix of size(n x n), then r(A) <= n.
+2. If 'A' is a non-square matrix of size (m x n), then r(A) <= min(m, n).
+3. If a matrix a attains the maximum possible rank, then it is said to have **Full Rank**.
+4. If a square matrix is non-singular, then it will have full rank.
+5. Rank of a matrix = `The number of linearly independent rows == The number of linearly independent columns of the matrix`.
+6. If all the rows (or Columns) of a matrix are identical or Proportional to each other, then its **Rank = 1**.
+
 
 
 
