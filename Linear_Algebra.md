@@ -56,3 +56,30 @@ If A = \[a*ij*]*m x n*, then
 3. P * (Q * A) = (P * Q) * A
 4. (-K) * A = -(K * A) = K * (-A)
 
+## Multiplication of Matrices
+Multiplication of matrices is only possible when they are ***multiplication conformable***, that is  - number of column in frist matrix should be equal to number of rows in second matrix.
+
+### Properties of matrix multiplication
+1. Matrix multiplication is Associative (A * B) * C = A * (B * C)
+2. Matrix multiplication is distributive with respect to addition of matrices: A * (B + C) = AB + AC
+3. Matrix Multiplication is not ***Always Commutative***: AB != BA
+   - If AB == BA, then the matrices 'A' and 'B' are said to **commute**.
+   - If AB == -BA, then the matrices are said to be **anti-commute**.
+4. The equation AB = 0, does not necessarily imply that one of the matrices 'A' and 'B' must be a Zero matrix.
+   - If AB = 0, then it does not necessarily imply that BA = 0.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
