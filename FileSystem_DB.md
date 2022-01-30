@@ -4,7 +4,7 @@
 Transaction is a set of operations, upon executing which corressponds to a single logical unit of work.
 
 ## Why Transaction management system?
-Since most of the operation(s) within the transaction are I/O bound, therefore inorder to increase CPU utilisation we need TMS so that when one transaction is in its I/o, other can be scheduled to CPU.
+Since most of the operation(s) within the transaction are I/O bound, therefore inorder to increase CPU utilisation we need TMS so that when one transaction is in its I/o, other can be scheduled in the CPU.
 
 ## Properties of TMS
 Acronym for the TMS properties is **A C I D**.
@@ -18,9 +18,9 @@ Acronym for the TMS properties is **A C I D**.
 ![](/Images/states_of_transaction.png)
 
 ## Concurrency Problems
-Sometime concurrent execution of several transaction leads to porblems termed as Concurrency problems, which are following:
+Sometime concurrent execution of several transaction leads to problems termed as Concurrency problems, which are following:
 - **Dirty Read** : Reading the value of a variable for some operation but value of the variable gets updated after read.
-- **Unrepeatable Read problem** : Multiple read on same variable giving the new value upon every read.
+- **Unrepeatable Read problem** : Multiple read operation on same variable giving the new value upon every read.
 - **Lost Update** : Changes made by one transaction(s) getting overridden by some other transaction.
 - **Phantom Tuple**: Trying to perform some operation on a variable that doesn't exists (deleted by some other transaction).
 - **Incorrect Summary Problem**: While performing aggregate function(s) of variables, value(s) getting updated concurrently. 
@@ -39,10 +39,13 @@ If transactions are getting excuted in kind of *first come first serve* fashion 
 Where N1, N2, ..., N*n* are the number of operation with the transaction T1, T2, ..., T*n*.
 
 ## Recoverable Schedule
+If in a schedule any transaction(T1 say) reads the value of the variable that has been updated by an uncommitted transaction(T2 say) then, T1 should get committed until T2 gets committed, if so schedule is said to be Recoverable schedule.
 
 ## Cascadeless Schedule
+If in a schedule any transaction does not read the value of a variable upon which an uncommitted transaction has operated, then schedule is said to be Cascadeless schedule.
 
 ## Strict Schedule
+If in a schedule any transaction neither reads nor writes the value of a variable upon which an uncommitted transaction has operated, then schedule is said to be Strict schedule.
 
 # File system in DBMS
 In this topic we discuss how to store the Database files in the secondary memory of out system.
