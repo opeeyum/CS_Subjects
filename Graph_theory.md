@@ -85,12 +85,15 @@ Number of edges is the size of given graph.
 - If graph is disconnected then its maximal connected subgraph(s) are called as components.
 
 ### Theorem to find whether any graph is connected or not:
-If sum of degree's of two non-adjacent vertices is greater or equal to one less than number of vertices in a graph then given graph is connected. 
+- If sum of degree's of two non-adjacent vertices is greater or equal to one less than number of vertices in a graph then given graph is connected. 
 
 ![](/Images/connected_gt.png), where v and u are non-adjacent vertices and n is total number of vertices in a graph.
 
+- If graph is connected then its minimum degree ![](/Images/minimum_degree.png) will be greater equal to **(n-1)/2**.
+
 ## 10. Complement of a Graph
-Complement of a graph G, denoted by 
+Complement of a graph G, denoted by G complement has same set of vertices V, but two vertices in G complement are adjacent iff they are non adjacent in G.
+- Complement of a **Disconnected graph** is always **Connected** and ***vice-versa***.
 
 ## Types of Simple Graph
 1. Null Graph(N*n*): A graph with *n* vertices and zero edges is Null Graph.
