@@ -18,11 +18,8 @@ Number of edges is the size of given graph.
 
 ## 2. Types of Graphs with Respect to Loops and Multi Edges
 
-### - Pseudo Graph(s)
-  Graphs having both loops and parallel edges.
-
 ### - Multi Graphs
-  Graphs having parallel-edges but not loops.
+  Graphs having parallel-edges and loops.
 
 ### - Simple Graph(s)
   Graph having neither loops nor parallel-edge(s).
@@ -71,7 +68,7 @@ Number of edges is the size of given graph.
 ![](/Images/complete_graph.png)
 
 ## 8. Difference between Walk, Trail, Path, Circuit and Cycle
-1. Walk - Alternating sequence of vertex and edges in a graph such that repetition of Edge and Vertex both is allowed.
+1. Walk - Alternating sequence of vertex and edges in a graph, *starting and ending on a vertex*, such that repetition of Edge and Vertex both is allowed.
    - If Walk starts and ends in same vertex then that walk is termed as **Closed Walk**.
    - Number of *edges* in a walk are equivalent to the length of the walk.
  
@@ -83,7 +80,19 @@ Number of edges is the size of given graph.
    - Closed Path is termed as Cycle.
    - Number of *edges* in a path are equivalent to the length of the walk.
 
-## 9. Types of Simple Graph
+## 9. Connected Graph
+- A graph is said to be connected if there exists atleast one path between every pair of vertices, if not so graph is disconnected graph.
+- If graph is disconnected then its maximal connected subgraph(s) are called as components.
+
+### Theorem to find whether any graph is connected or not:
+If sum of degree's of two non-adjacent vertices is greater or equal to one less than number of vertices in a graph then given graph is connected. 
+
+![](/Images/connected_gt.png), where v and u are non-adjacent vertices and n is total number of vertices in a graph.
+
+## 10. Complement of a Graph
+Complement of a graph G, denoted by 
+
+## Types of Simple Graph
 1. Null Graph(N*n*): A graph with *n* vertices and zero edges is Null Graph.
 2. Cyclic Graph(C*n*, n>=3):  The cycle graph is a simple graph with 'n' vertices {V1, V2, ..., Vn} and edges {V1, V2}, {V2, V3}, ..., {Vn, V1}.
 ```
