@@ -1,3 +1,12 @@
+ ### While there are many possible commands we can use, in practice there are six use most frequently in Django development.
+ - cd (change down a directory)
+ - cd .. (change up a directory)
+ - ls (list files in your current directory)
+ - pwd (print working directory)
+ - mkdir (make directory)
+ - touch (create a new file)
+
+### Django Specific Commands
 - Create virtual environment: ```python3 -m venv <virtual environment name>```
 
 - Activate virtual environment: ```source <virtual environment name>/bin/activate```
