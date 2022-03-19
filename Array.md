@@ -1,4 +1,4 @@
-Must do Array Question.
+# Must do Array Question.
 ### 1. Two Sum
  > Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
  > You may assume that each input would have exactly one solution, and you may not use the same element twice.
@@ -9,7 +9,7 @@ Must do Array Question.
   
   We can assume that for all the numbers in the list (x1, x2, ... xn) that there exists a pair such that xi + xj = target.
   
-  To solve this with a single pass of the list we can change the equation above to xa = target - xb, since we know the target as long as we maintain a record of all previous values in the list we can compare the current value (xi) to it's ONLY pair, if it exists, in record of all previous values (xj).
+  To solve this with a single pass of the list we can change the equation above to xi = target - xj, since we know the target as long as we maintain a record of all previous values in the list we can compare the current value (xi) to it's ONLY pair, if it exists, in record of all previous values (xj).
 
   To keep a record of the previous values and their indices ***i*** we can use a dictionary. Commonly known as a map in other languages. This allows me to record each previous number in the dictionary alongside the indice as a key value pair (target-number, indice).
   
