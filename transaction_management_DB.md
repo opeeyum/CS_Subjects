@@ -47,7 +47,7 @@ If in a schedule any transaction does not read the value of a variable upon whic
 ## Strict Schedule
 If in a schedule any transaction neither reads nor writes the value of a variable upon which an uncommitted transaction has operated, then schedule is said to be Strict schedule.
 
-# File system in DBMS
+<!-- # File system in DBMS
 In this topic we discuss how to store the Database files in the secondary memory of out system.
 
 How we are going to map file records onto the disk blocks.
@@ -55,4 +55,4 @@ How we are going to map file records onto the disk blocks.
 ## 2. What is File?
 File is a collection of records.
 
-File organisation is a logical relationship among various records.
+File organisation is a logical relationship among various records. -->

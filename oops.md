@@ -1,4 +1,4 @@
-# What is OBJECT-ORIENTED PROGRAMMING?
+# What is Object-Oriented Programming?
 Object-oriented programming is a programming paradigm built on the concept of objects.
 
 In Other Words, it is an approach to problem-solving where all computations are carried out using objects.
@@ -14,7 +14,7 @@ In Other Words, it is an approach to problem-solving where all computations are 
 
 Examples: C++, Java, Python, C#, JavaScript, Ruby, PHP, VB.NE
 
-## TERMINOLOGIES
+## Terminologies
 
   #### Class
    - A class is a group of objects that share common properties and behavior. It is a blueprint or template from which objects are created.
@@ -181,7 +181,7 @@ Examples: C++, Java, Python, C#, JavaScript, Ruby, PHP, VB.NE
 <table>
   <thead>
     <tr>
-      <th>SL</th>
+      <th>SNo.</th>
       <th> Overloading</th>
       <th> Overriding</th>
     </tr>
