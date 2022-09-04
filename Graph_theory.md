@@ -4,31 +4,31 @@ Graph is a triplet consisiting vertex set V(G), an edge set E(G), and the relati
 
 ![](/Images/simple_graph.png)
 
-### - Order of Graph
-Number of vertices is the order of given graph.
+- ### Order of Graph
+  Number of vertices is the order of given graph.
 
-### - Size of Graph
-Number of edges is the size of given graph.
+- ### Size of Graph
+  Number of edges is the size of given graph.
 
-### - Loop
+- ### Loop
   Edge that connects a vertex to itself is termed as loop.
 
-### - Parallel Edges
+- ### Parallel Edges
   Two or more edges having same end points are termed as Parallel edges.
 
 ## 2. Types of Graphs with Respect to Loops and Multi Edges
 
-### - Multi Graphs
+- ### Multi Graphs
   Graphs having parallel-edges and loops.
 
-### - Simple Graph(s)
+- ### Simple Graph(s)
   Graph having neither loops nor parallel-edge(s).
 
 ## 3. Various representation of Graphs
-### - Linked list
-![](/Images/linked_list_graph.png)
-### - Adjacency matrix
-![](/Images/adjacency_matrix.png)
+- ### Linked list
+  ![](/Images/linked_list_graph.png)
+- ### Adjacency matrix
+  ![](/Images/adjacency_matrix.png)
 
 ## 4. Degree of Vertex
 - Total number of edges incident(incoming) to any vertex is its degree.
