@@ -27,8 +27,10 @@
 ## Types of Addresses
 Physical Address
   - Unique within a LAN
+ 
 Logical Address
   - Unique in internet
+  
 Port
   - Unique within Machine for differnet processes
 <table>
@@ -62,6 +64,59 @@ Port
   </tr>
  </table>
  
- ## Responsibilities of Data Link Layer
+ ## Data Link Layer
+ Data link layer is responsible for node to node (or **Hop tp Hop**) delivery of packets called **Frames**.
+ - Functions:
+   1. **Framing** -> DLL add header and tail to the datagram received from network layer and resulting packet is called frame.
+   2. **Physical addressing** -> Header of the frame contains physical address of both dender and receiver if both are in same network but if both are in different network then it may contain physical address of intermediate node also.
+   3. **Flow control** -> Amount of data that can be sent from sender to receiver before receiving acknowledgement.
+   4. **Error Control** -> 2 strategies Error detection & Retransmission (Prefered technique), Error Correction.
+   5. **Access Control** -> Who can access the shared channel and When?
+
+## Network Layer
+N/W layer is responsible for **Host to Host** delivery of packets called **DataGram**.
+- FUnctions:
+   1. **Logical Addressing** -> Header of N/W layer contain logical address of both sender and receiver.
+   2. **Routing** -> Routing means to route the packet to final destination we have various routing protocols which work at N/W layer.
+   3. **Quality of Service** -> Quality is a subjective term, so to measure quality quatitatively we have to consider the certain parameters **Reliability, Delay, Jitter, Bandwidth**. `Jitter: Variation in timing of receiving packets.`
+   4. **Congestion Control** -> If number of packets present in the N/W is greater than teh number of packets it can handle then we say congestion has occurred.
+   5. **Fragmentation** -> If datagram size is more than MTU of the N/W then fragmentation is done. `MTU: Maximum transmission unit`.
+
+## Transport Layer
+**End to End** delivery of entire message or process to process delivery.
+- Function:
+   1. **Secure Point Addressing** -> Header of transport layer contains port address of both sender and receiver.
+   2. **Segmentaion and Reassembly** -> Transport layer divides stream of bits received from session layer into small packets called segments, each segments had segment number which help the transport layer at receiver end to reassemble the segments.
+   3. **Connection Control** -> Transport layer can be connection-less or connection oriented.
+   4. **Flow Control** ->
+   5. **Error Control** ->
+   6. **Congestion Control** ->
+   7. **Multiplexing and Demultiplexing** ->  Multiplexing at sender side and demultiplexing at receiver side. 
+
+## Session Layer
+Session Layer is also known as N/W dialogue congestion.
+- Function:
+   1. **N/W dialouge controller** -> Seesion layer establishes, maintains, synchrinize & terminate the interaction b/w sender & receiver.
+   2. **Synchronization of data** -> Session layer some synchronization bits to the message and these bits may used as a checkpoints.
+   3. **Token Management** -> Cookies or token are generated at server side & sent to client so that in next session these cookies are showen by client to server and hence server can recognize the client.
+   4. **Authentication & Authroization** -> N/W security.
+
+## Presentation Layer
+This layer mainly deals with syntax and semantics of information excanged b/w 2 systems.
+- Funtions:
+   1. **Translation** -> 
+   2. **Encryption** ->
+   3. **Compression** -> Compression at sender side and decompression at receiver side.
+ 
+## Application Layer
+This layer acts a an interface b/w user applications and N/W.
+- Functions:
+   1. **Interface**
+   2. **FTAM** (File transmission access and Management)
+   3. **Remote Login**
+   4. **Directory Services** -> Accessing any kind of information from distributed databases.
+   5. **Email services** -> Email forwarding and storage
+
+## Why OSI model failed?
 
 `To be continued...`
