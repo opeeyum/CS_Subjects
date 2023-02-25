@@ -248,3 +248,60 @@ Explaination:
   R1 = R2 - R1
   M[X] <- R1, 3rd MOV, Since final result should be in memory.
 ```
+## Instruction
+ A group of bits which instructs computer to perform some operation.
+
+ Instruction consists of two parts:
+ 1. Operation Code (Opcode) -> What operation to perform.
+ 2. Operands information -> Address of operands, number of address stored can vary in the given instruction depending upon the implementation.
+
+> ISA (Instruction set architecture): Collection of all instruction that a CPU supports.
+
+### Types of Instructions
+ Based on operation
+ - Data Transfer:      MOV, LDI, LDA
+ - Arithmetic & Logic: ADD, SUB, AND, OR
+ - Machine Control:    EI, DI, PUSH, POP
+ - Iterative:          LOOP, LOOPE, LOOPZ
+ - Branch:             JMP, CALL, RET, JZ, JNZ
+
+ Based on Operand Information
+  - 4-Address Instruction
+
+    Within each instruction **maximum** 4 address can be specified. 
+    
+    Computer having 4-Address instruction does not have Program Counter.
+
+    Disadvantages:
+     - Larger size Instruction.
+     - Larger size program in memory.
+     - Instruction fetch takes more time.
+     - Relocation in not easy, as reolaction in 4-address type instruction requires to update each instruction because instructions have address of next instruction to be executed within them.
+  - 3-Address Instruction
+
+    Within each instruction **maximum** 3 address can be specified.
+
+    Program counter is used to get address of next instruction.
+  - 2-Address Instruction
+
+    Within each instruction **maximum** 2 address can be specified.
+
+    Program counter is used to get address of next instruction.
+
+    One operand address in 2-address type instruction is used as SOurce and Destination both.
+
+    Disadvantages:
+    - More number of instruction for a program as compared to 3-address instruction format.
+    - More memory for a program as number of instruction is larger.
+  - 1-Address Instruction
+
+    Within each instruction **maximum** 1 address can be specified.
+
+    Accumulator is used as second operand implicitly, Accumulator based architecture.
+
+    Program counter is used to get address of next instruction.
+  - 0-Address Instruction
+
+    Used in stack based architecture.
+    
+    No address is mentioned in the instructions, only opcode is specified. And, two oprands are implicitly taken from the stack.

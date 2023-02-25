@@ -80,11 +80,11 @@
      - Number of *edges* in a walk are equivalent to the length of the walk.
  
   2. Trail - Traversal of graph such that repetition of **edge(s)** is(are) not allowed.
-     - Closed Trail is termed as Circuit.
-      - Number of *edges* in a trail are equivalent to the length of the walk.
+     - Closed Trail is termed as **Circuit**.
+     - Number of *edges* in a trail are equivalent to the length of the walk.
 
-  3. Path - Traversal of graph such that repetition ***neither vertex(vertices) nor edge(s)*** is(are) allowed.
-     - Closed Path is termed as Cycle.
+  3. Path - Traversal of graph such that repetition of ***neither vertex(vertices) nor edge(s)*** is(are) allowed.
+     - Closed Path is termed as **Cycle**.
      - Number of *edges* in a path are equivalent to the length of the walk.
 
 - ### Connected Graph
@@ -102,14 +102,27 @@
   Complement of a graph G, denoted by G complement has same set of vertices V, but two vertices in G complement are adjacent iff they are non adjacent in G.
   - Complement of a **Disconnected graph** is always **Connected** and ***vice-versa***.
 
-## Types of Simple Graph
-1. Null Graph(N*n*): A graph with *n* vertices and zero edges is Null Graph.
-2. Cyclic Graph(C*n*, n>=3):  The cycle graph is a simple graph with 'n' vertices {V1, V2, ..., Vn} and edges {V1, V2}, {V2, V3}, ..., {Vn, V1}.
-```
-A Cyclic graph will always be Regular.
-A Cyclic graph with Even number of Vertices will always be Bipartite.
-```
-3. Bipartite Graph = A Graph G = (V, E) is bipartite if the Vertex set can be partitioned into sets V1 and V2 such that every edge is between a vertex of V1 and V2.
-  - Degree of Bipartite graph == **max(m, n)**, where **m** and **n** are number of vertices in V1 and V2.
-  - Maximum edges possible = ![](/Images/max_edge_in_bg.png)
-4. Complete Bipartite Graph(K*m*, n) = A Bipartite graph in which every vertex in V1 is adjacent to every vertex in V2 set.
+## Types of Graph
+  
+1. ### Null Graph(N*n*)
+   A graph with *n* vertices and zero edges is Null Graph.
+2. ### Cyclic Graph(C*n*, n>=3)  
+   The cycle graph is a simple graph with 'n' vertices {V1, V2, ..., Vn} and edges {V1, V2}, {V2, V3}, ..., {Vn, V1}.
+    ```
+    A Cyclic graph will always be Regular.
+    A Cyclic graph with Even number of Vertices will always be Bipartite.
+    ```
+3. ### Eulerian Trail
+   Eulerian trail is a closed trail which includes all the edges of graph G.
+   - A connected graph G is Eulerian iff every vertex i th graph has even degree.
+
+4. ### Hamiltonian Graph
+   A Hamiltonian cycle in a graph G is a cycle that includes all the vertices of the Graph.
+
+   A Graph is Hamiltonian if it contnues a Hamiltonian cycle.
+
+5. ### Bipartite Graph
+   A Graph G = (V, E) is bipartite if the Vertex set can be partitioned into sets V1 and V2 such that every edge is between a vertex of V1 and V2.
+   - Degree of Bipartite graph == **max(m, n)**, where **m** and **n** are number of vertices in V1 and V2.
+   - Maximum edges possible = ![](/Images/max_edge_in_bg.png)
+   - Complete Bipartite Graph(K*m*, n) = A Bipartite graph in which every vertex in V1 is adjacent to every vertex in V2 set.
