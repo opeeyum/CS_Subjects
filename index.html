@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Embedded Markdown Snippet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      padding: 10px;
+      margin-bottom: 20px;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Embedded Markdown Snippet</h1>
+    <p>Here's an example Markdown snippet:</p>
+    <pre>
+# This is a Heading
+
+This is some **bold** text and some _italic_ text.
+
+Here's a list:
+- Item 1
+- Item 2
+- Item 3
+
+[This is a link](https://example.com)
+
+```python
+print("Hello, world!")
+```
+</pre>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+<script>
+  const converter = new showdown.Converter();
+  const pre = document.querySelector('pre');
+  const markdown = pre.textContent.trim();
+  const html = converter.makeHtml(markdown);
+  pre.innerHTML = html;
+</script>
+</body>
+</html>

@@ -182,22 +182,56 @@
     ```
 7. Question:
     ```
+    Consider a system which supports 2-address instructions. If system has 24-bits instructions and 10-bits addresses then which of the following is/are possible number of instructions supported by system?
+    a) 0
+    b) 1
+    c) 8
+    d) 16
     ```
     Answer:
     ```
+    Max it can support: 16
+    And minimum will always be 1,
+    Therefore, b, c, and d all three are possible.
     ```
     Solution:
     ```
+    Instruction size = 24-bits
+    Address size = 10-bits
+    opcode bits = 24 - 2 * 10 = 4-bits
     ```
 7. Question:
     ```
+    Consider a hypothetical processor with largest instruction length being 32-bits and total 16 registers R0-R15. Processor supports following instructions:
+        ADD   Ri, Rj
+        SUB   Ri, Rj
+        AND   Ri, Rj
+        NOT   Ri
+        MOV   Ri, Rj
+        LOAD  Address //Loads with register RO
+        Store Address // Stores the content of R1
+        JUMP  Address
+        JZ Address
+    The maximum number of address lines on this processor is ?
     ```
     Answer:
     ```
+    28
     ```
     Solution:
     ```
+    Instruction size = 32-bits
+    opcode bits = 4-bits, as 9 distinct addresses
+    From Instruction 1, 2, 3, 5
+    Address size = (32 - 4) / 2 = 14bits
+
+    from Instruction 4, 6, 7, 8
+    Address size = 32 - 4 = 28-bits
     ```
+> 1. If there is fixed length instruction then OPCODE will be of variable length.
+
+> 2. And, if instrcution size is variable then OPCODE will be of fixed length.
+
 7. Question:
     ```
     ```
