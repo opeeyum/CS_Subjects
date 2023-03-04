@@ -6,7 +6,7 @@
 
 ## Architecture VS Organisation
  ### Architecture
-  - Conceptual design & fundamental oprational structure.
+  - Architecture means Conceptual design & fundamental operational structure of a computer system.
     - What type of components (i.e CPU, RAM, ROM etc.) will be having in a system? 
     - Specifying functionality of each mentioned components.
     - Specifying CPU design i.e Block diagram of CPU, Pin diagram of cpu and working of CPU and most importantly Instructions that a cpu can take, Addressing Modes & Data format.
@@ -25,11 +25,11 @@
     <tbody>
       <tr>
         <td>CPU Design</td>
-        <td>I/O organisation</td>
+        <td>I/O Organisation</td>
       </tr>
       <tr>
         <td>Instructions</td>
-        <td>Memory organisation</td>
+        <td>Memory Organisation</td>
       </tr>
       <tr>
         <td>Addressing Modes</td>
@@ -50,21 +50,22 @@
     - We can store instruction and data either in **numbers** or second option is **characters**.
     - Numbers can have either **Fixed Point** OR **Floating Point** representation.
     - For characters we two code formats, 
-        1. ASCII : Uses 8 bits, 7-bits for character + 1-bit for parity.
-        2. EBCDIC (Extended Binary Coded Decimal Interchange Code): 8-bits per characters.
+        1. **ASCII** : Uses 8 bits, 7-bits for character + 1-bit for parity.
+        2. **EBCDIC** (Extended Binary Coded Decimal Interchange Code): 8-bits per characters.
   
   ### Von Neumann's Architecture
    - Also known as **Stored Program Architecture**.
    - Also known as **Princeton Architecture**.
    - Suggests storing Instruction and Data both in a memory unit.
 
-      <img src="../images/core_subjects/von_neumann_architecture.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>
+      <img src="../images/von_neumann_architecture.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>
 
         #### Bottleneck in Von Neumann Architecture
         - Since components are connected with Single set of Bus, hence CPU can't access Data and Instruction simultaneously.
         - Connecting more bus won't work as Memory can only handle one request at a time.
   ### Havard Architecture
-   - Its a advancement to  Von Newmann's Architecture, suggests having two seperate memory unit for instruction and data, so that CPU can fetch instruction and data simultaneously.
+   - Its a advancement to  Von Neumann's Architecture.
+   - Havard architecture suggests having two seperate memory units for instruction and data, so that CPU can fetch instruction and data simultaneously.
    - Its not practically implemented.
 
 ```
@@ -100,9 +101,7 @@ Answer:
    - Output Devices
 
  - ### Other Components
-   - System Buses
-
-     Connection lines between two devices within the Computer System, for comunication. There will muliple lines as one line transfers only one bit.
+   - **System Buses**: Connection lines between two devices within the Computer System, for communication. There will muliple lines as one line transfers only one bit.
      
      Types of System Buses:
      - Address Bus: Address bus is **Uni-Directional**, From CPU to Memory/IO devices.
@@ -115,9 +114,7 @@ Answer:
        
        **Memory Cycle Time**: Time from accepting a request till memory gets ready again to perform next operation is known as Memory Cycle Time.
 
-   - CPU Registers
-
-     Small memory(storage) unit within the CPU.
+   - **CPU Registers**: Small memory(storage) unit within the CPU.
 
      Types of CPU Registers:
      - General Purpose Registers (GPRs)
@@ -259,11 +256,11 @@ Explaination:
 
 ### Types of Instructions
  Based on operation
- - Data Transfer:      MOV, LDI, LDA
- - Arithmetic & Logic: ADD, SUB, AND, OR
- - Machine Control:    EI, DI, PUSH, POP
- - Iterative:          LOOP, LOOPE, LOOPZ
- - Branch:             JMP, CALL, RET, JZ, JNZ
+ - Data Transfer:      `MOV, LDI, LDA`
+ - Arithmetic & Logic: `ADD, SUB, AND, OR`
+ - Machine Control:    `EI, DI, PUSH, POP`
+ - Iterative:          `LOOP, LOOPE, LOOPZ`
+ - Branch:             `JMP, CALL, RET, JZ, JNZ`
 
  Based on Operand Information
   - 4-Address Instruction
