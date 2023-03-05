@@ -172,6 +172,48 @@ Answer:
 - In other terms, The operations executed on values stored in registers.
 - Micor-Operations have symbolic notation to describe the opertaion known as **Regiater Transfer Language (RTL)**.
 
+Sample Micro-Operation
+- Copy content of Program Counter into Address Register.
+
+  `AR <- PC`; In RTL
+
+### RTL
+1. Register Transfer: R1 <- R2 OR R2 -> R1
+2. Comma: R1 <- R2 + R3, PC <- PC + 1
+
+   If two or more micro-operation are seperated by comma then all that operation can be executed in Parallel.
+3. Memory Transfer: 
+   Memory Transfer includes, Memory-Read and Memory-Write.
+
+   Memomry-Read: R*i* <- M[Memory Address], here address can come from any register or directly memory location can be specified.
+
+   Memory-Write: M[Memory Address] <- R*i*
+
+### Types of Micro-Operations
+1. Arithmetic Micro-Operation:
+   - Addition `R1 <= R2 + R3`
+   - Substraction `R1 <- R2 - R3`
+   - Complement `R1 <- R2'`
+   - 2's Complement `R1 <- R2' + 1`
+   - Addition with 2's Complement `R1 <- R2 + R3' + 1`
+   - Increment `R1 <- R1 + 1`
+   - Decrement `R1 <- R1 - 1`
+2. Logical Micro-Operation:
+   - AND `R1 <- R2 ^ R3`
+   - OR `R1 <- R2 v R3`
+   - X-OR `R1 <- R2 ⊕ R3`
+   - X-NOR `R1 <- R2 ⊙ R3`
+3. Shift Micro-Operation:
+   - Logical Shift
+     - Logical **Left** Shift of `1 0 1 1 = 0 1 1 0`
+     - Logical **Right** Shift of `1 0 1 1 = 0 1 0 1`
+   - Circular Shift (Rotation)
+     - Circular **Left** Shift of `1 0 1 1 = 0 1 1 1`
+     - Circular **Right** Shift of `1 0 1 1 = 1 1 0 1`
+   - Arithmetic Shift: **Applied on Signed Numbers** only, hence after arithmetic shift sign of the number should remain same.
+     - Arithmetic **Left** Shift, it is similar to logical left shift but sign of number should not be getting changed else operation will be rejected and an error will raised **'ARITHMETIC LEFT SHIFT OVERFLOW'**. `1 1 0 1 = 1 0 1 0`,  `1 0 1 1 = Not Allowed`
+     - Arithmetic **Right** Shift of `1 0 1 1 = 1 1 0 1`
+
 
 ```
 Question:
@@ -190,6 +232,7 @@ Answer:
 ```
 
 ```
+Gate 2007
 Info:
  Consider the following program segment. Here R1, R2 and R3 are the general purpose register.
 
