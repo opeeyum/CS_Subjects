@@ -118,17 +118,34 @@ Answer:
 
      Types of CPU Registers:
      - General Purpose Registers (GPRs)
-     - Special Purpose Registers
+     - Special Purpose Registers:
       1. **Accumulator** (AC): Used to store result of ALU and sometime to store one of the input of the ALU. 
       2. **Program Counter** (PC): Stores address of next instruction. 
       3. **Instruction Register** (IR): Used to store current instruction which CPU is executing.
       4. **Stack Pointer** (SP): Used to store address of the top element of the stack.
       5. **Flag Register**  / **Program Status Word** (PSW): It stores the status of ALU result. Status is stored to check the conditions.
-      > In Some CPU's Status register is considered as PSW while in others combination of Accumulator and Status register is considered as PSW. 
+      
+          Conditions can be as follows:
+          - Whether result is positive or negative.
+          - Result is Zeot or not, etc.
+          > In Some CPU's Status register is considered as PSW while in others, combination of Accumulator and Status register is considered as PSW. 
       6. **Address Register** (AR) / **Memory Address Register** (MAR): It is used to send address to memory.
-      7. **Data Register** (DR) / **Memory Data Register** (MDR) / **Memory Buffer Register** (MBR): It is used to send data to memory (memory write) & to recieve data from memory (memory read).
+      7. **Data Register** (DR) / **Memory Data Register** (MDR) / **Memory Buffer Register** (MBR): It is used to send data to memory (*memory write*) & to recieve data from memory (*memory read*).
 
-     Types of Architecture: Based on Input to ALU
+     Seudo Memory Read and Write operation:
+
+     Mem. Read - 
+     1) CPU sends address to a memory using address bus.
+     2) CPU enables read control signal for memory.
+     3) Memory performs read operation & sends the data to CPU using data bus.
+
+     Mem. white -
+      1) CPU Sends address to memory using address bus.
+      2) CPU sends data to memory using data bus.
+      3) CPU Sends enabled write signal to memory.
+      4) Memory performs write operation on provided address.
+
+     Types of Architecture: Based on Input to ALU: 
       1. **Accumulator based**: One input of ALU comes from Accumulator, 2nd input can come from all other choices.
       2. **Register based Architecture**: Both the inputs of ALU taken from GPRs, result will be stored to Accumulator.
       3. **Register to Memory Architecture**: One operand(input) of ALU from Register and 2nd from Memory, result in Accumulator.
@@ -145,10 +162,16 @@ Options:
  b) 500
  c) 600
  d) 700
-
+ 
 Answer:
  c.
 ```
+
+## Micro-Operations
+- Smallest operation that CPU can execute in one step is known as Micro-Operation.
+- In other terms, The operations executed on values stored in registers.
+- Micor-Operations have symbolic notation to describe the opertaion known as **Regiater Transfer Language (RTL)**.
+
 
 ```
 Question:
