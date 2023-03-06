@@ -58,6 +58,9 @@ Examples: C++, Java, Python, C#, JavaScript, Ruby, PHP, VB.NE
   #### Abstract Class
    - An abstract class is a special class containing abstract methods. The significance of abstract class is that the abstract methods inside it are not implemented and only declared. So as a result, when a subclass inherits the abstract class and needs to use its abstract methods, they need to define and implement them.
 
+ #### Sealed Class
+   - Sealed Class used to restrict the users from inheriting the class. A class can be sealed by using the sealed keyword.
+   
   #### Abstract Method
    - An abstract method is a method that doesn’t have anybody.
 
