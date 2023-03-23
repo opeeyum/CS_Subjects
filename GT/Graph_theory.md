@@ -122,7 +122,9 @@
    A Graph is Hamiltonian if it contnues a Hamiltonian cycle.
 
 5. ### Bipartite Graph
-   A Graph G = (V, E) is bipartite if the Vertex set can be partitioned into sets V1 and V2 such that every edge is between a vertex of V1 and V2.
+   A Graph G = (V, E) is bipartite if the Vertex set can be partitioned into sets V1 and V2 such that every edge  connects a vertex of V1 to a vertex of V2.
    - Degree of Bipartite graph == **max(m, n)**, where **m** and **n** are number of vertices in V1 and V2.
-   - Maximum edges possible = ![](/Images/max_edge_in_bg.png)
-   - Complete Bipartite Graph(K*m*, n) = A Bipartite graph in which every vertex in V1 is adjacent to every vertex in V2 set.
+   - Degree sum of V1 will always be equal to degress sum of V2.
+   - Maximum edges possible = ![](/Images/max_edge_in_bg.png).
+   - Complete Bipartite Graph(K*m*, n) = A Bipartite graph in which every vertex in V1 is adjacent to every vertex in V2 set, i.e m == n.
+   - A Graph is bipartite iff it does not have any odd cycles.
