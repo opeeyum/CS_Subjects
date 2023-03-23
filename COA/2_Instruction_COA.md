@@ -201,7 +201,6 @@ Instruction consists of two parts:
       </thead>
       </table>
 
-
     Within each instruction **maximum** 1 address can be specified.
 
     Accumulator is used as second operand implicitly, Accumulator based architecture.
@@ -210,9 +209,31 @@ Instruction consists of two parts:
 
 -   0-Address Instruction
 
+    <table>
+      <thead>
+      <th>
+      </th>
+      </thead>
+      <tbody>
+      <tr>
+      <td>
+      Opcode
+      </td>
+      </tr>
+      </tbody>
+      <thead>
+      <th>
+      </th>
+      </thead>
+      </table>
+
     Used in stack based architecture.
 
-    No address is mentioned in the instructions, only opcode is specified. And, two oprands are implicitly taken from the stack.
+    No address is mentioned in the instructions, only opcode is specified.
+
+    Two oprands are implicitly taken from the stack.
+
+> If CPU supports 3-address instruction then it can support 2-Address, 1-Address, and 0-Address type instructions. This applicable to all instruction type 4, 3, 2, 1 and 0.
 
 ## Addressing Mode
 
@@ -220,14 +241,143 @@ Instruction consists of two parts:
 
 -   Address of operand in a computation-type instruction, i.e. ADD, SUB, MOV, AND
 -   OR, The target address in a branch-type instuctions.
-
 ### Instruction Cycle
+
+1. Instruction Fetch: Get Interuction form memory to CPU (Instruction Register). Program Counter Value is increased by Size of instruction loaded to instruction register.
+2. Instruction Decode
+3. Effective Address Calculation
+4. Operand Fetch
+5. Execution
+6. Write Back - result
+
+-   These instruction are classified into two cycles - Fetch Cycle and Execution Cycle.
+<table>
+    <thead>
+      <th>
+       Fetch Cycle
+      </th>
+    <th>
+      Execution Cycle
+    </th>
+    </thead>
+    <tbody>
+    <tr>
+    <td>
+    Instruction Fetch
+    </td>
+    <td>
+    Instruction Decode
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    Effective Address Calculation
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    Operand Fetch
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    Instruction Execution
+    </td>
+    </tr>
+    <tr>
+    <td>
+    </td>
+    <td>
+    Write Back Result
+    </td>
+    </tr>
+    </tbody>
+    </table>
 
 ### Addressing Mode
 
 -   Its is used to specifiy how to access the operand whose address is mentioned in the instruction.
 
+<table>
+      <thead>
+      <th>
+      </th>
+      <th>
+      </th>
+      <th>
+      </th>
+      </thead>
+      <tbody>
+      <tr>
+      <td>
+      Opcode
+      </td>
+      <td>
+      Mode
+      </td>
+      <td>
+      Address
+      </td>
+      </tr>
+      </tbody>
+      <thead>
+      <th>
+      </th>
+      <th>
+      </th>
+      <th>
+      </th>
+      </thead>
+      </table>
+
+#### Implied Mode
+Opcode definition specifies operand also.
+
+Ex. INCA: Increment Accumulator
+
+#### Immediate Mode
+Address part in instruction is itself a operand value.
+- Immediate addressing Mode is used to intialize register with constant value.
+
+#### Direct Mode (Absolute Mode)
+Address part in instruction is a memory address for operand i.e effective address.
+
+#### Indirect Mode
+Adddress part in instruction is a address for address of a instruction, that is address provided in a intruction is a address of effective address.
+
+#### Register Mode
+Address part in instruction specifies a reference to a register which holds the operand.
+
+#### Register Indirect Mode
+Address part in instruction specifies a reference to a reister which holds effective address i.e reference to meomry where operand in present.
+
+- This addressing mode is used to shorten instruction length.
+
+#### Auto Increment/Decrement Mode
+- It is used to access table of content sequentially.
+- It is a variant of register indirect mode.
+- The content of register (effective address) is automatically incremented or decremented.
+- Auto-increment will be the Post-Increment.
+- While Auto-decrement mode will be the Pre-Decrement.
+
+#### Indexed Mode
+- Used to access array element.
+- Effective Address = Base Address + Index Value
+- In the instruction Base address will be specified and Index value will be calculated from Index Register.
+- The problem with Indexed addressing mode is that if, Os relocates the program then all instruction needs to be relocated as base address is specified in the instruction, which is not advisable.
+
+#### Index, Base Register Mode
+- Advancement to Indexed Mode, both index value and Base register is taken from special purpose register Index Register and Base Register respectively.
+
 #### Index, Base Register + Displacement Mode
+- This addressing mode is used to access array of records.
+- Effective address = Base Register + Index Register + Address field value of instruction
 
 #### Scaled mode
 
