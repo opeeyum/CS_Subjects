@@ -365,6 +365,7 @@ Address part in instruction specifies a reference to a reister which holds effec
 - The content of register (effective address) is automatically incremented or decremented.
 - Auto-increment will be the Post-Increment.
 - While Auto-decrement mode will be the Pre-Decrement.
+- Both Auto Increment/Decrement mode come with driver code i.e loop instructions to fetch operand multiple times.
 
 #### Indexed Mode
 - Used to access array element.
