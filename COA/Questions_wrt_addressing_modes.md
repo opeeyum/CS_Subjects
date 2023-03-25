@@ -113,8 +113,16 @@
     => offset = -16
     ```
 1. Question:
-    ```
-    ```
+
+    Consider a system which supports 2-address, 1-address and 0-address instructions. The system has 'a' bits instructions and supports 2<sup>m</sup> bytes memory. If there are 't' 2-address instructions and 'w' 1-address and 'z' 0-address instructions then which of the following is correct?
+
+    A. 2<sup>a</sup> = 2^m^ . t + w + z
+
+    B. 2<sup>a</sup> = 2^2m^ . t + 2^2m^ . w + z
+
+    C. 2<sup>a</sup> = 2^3m^ . t + 2^2m^ . w + 2^2m^ . z
+
+    D. 2<sup>a</sup> = 2^2m^ . t + 2^2m^ . w - z
     Answer:
     ```
     ```
