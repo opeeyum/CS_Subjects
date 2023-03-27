@@ -51,3 +51,21 @@ CPU's performance is given by MIPS.
 - As type of instruction that computer dealt with may of different time complexity.
 - To solve this problem we have FLOPS (Floating Point operations Per Second).
 
+## Data Path
+- Collection of functional units such as arithmetic logic units or multipliers.
+- Perform data processing poerations
+
+## Control Unit
+- Control unit generates signals, sends those to components, components work accordingly.
+- **Control Variable**: Name of the control signal.
+- **Control Word**: collection of all control signals.
+
+## Control Unit Organisation
+- Hardwired Control Unit
+- Microprogrammed Control Unit
+
+### Harwired Control Unit
+- Control Logic is implemented with Gates, flip-flops, decoders and other digital circuits.
+- **Advantage**: Can be optimized to product a faster mode of operation.
+- **Disadvnatage**: Rearrangeing the wires among various components is diffcult.
+
