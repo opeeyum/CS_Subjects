@@ -3,24 +3,25 @@
 ***
 
 ## Introduction to UNIX system call PART 1
- - In inital days UNIX shell allows user to following functionalities:
-    1. Start / Load a new program.
-    2. Open / Read / write files.
-    3. exit 
-- Intially shell was part of OS, but in modern OS shell run as separate application, thus OS should provide functioanlity to any application mentiond above.
+ - In inital days UNIX shell provides following functionalities:
+    1. Start or Load a new program.
+    2. Open, Read, or Write files.
+    3. Exit 
+- Intially shell was part of OS, but in modern OS shell run as separate application, thus OS should provide all functioanlities mentiond above to application's.
 - These functionalities of OS are kernel functions also known as '**System Calls**'. 
-(Continuing with model where shell was not part of OS)
+
+(Continuing with the model where shell was not part of OS)
 - UNIX provide `fork()` and `exec()` system call to start a program.
 - ### `exec()` system call:
-    1. This system call takes file name as parameter, i.e exec(`<file name>`).
+    1. This system call takes file name as parameter, i.e `exec(<file name>)`.
     2. It searches for file in the pwd and loads the file, replacing the shell.
-    3. Since shell itself is running as application, there is no way to return control the shell again.
+    3. Since shell itself was running as application, there is no way to return the control to the shell again.
     4. This was not the problem with model where shell was part of OS.
 - ### `fork()` system call:
     1. Similar to `exec()`, fork also takes file name as a parameter.
-    2. What makes it different is that when `fork()` call is made first `fork()` create a copy of current process (**child process**) with same state(program counter).
+    2. What makes it different, is that when `fork()` call is made first `fork()` create a copy of current process (**child process**) with same state(program counter).
     3. Now child process makes the `exec()` system call with same file name as in passed to `fork()` intially.
-    4. Since parent and child process are exact replica, how to differentiate b/w them, `fork()` call returns a value **pid**. For **parent** process return value be the **pid of child process**, and for **child** process `fork()` return value will any **value that cannot be pid i.e 0(zero)**.
+    4. Since parent and child process are exact replica, how to differentiate b/w them? `fork()` call returns a value **pid**. For **parent** process return value be the **pid of child process**, and for **child** process `fork()` return value will any **value that cannot be pid i.e 0(zero)**.
 - All the access to the hardware resources was mediate by OS, to different applications.
 - One contributiion of UNIX was introduction to general interface for mediating allocation to variety of resources, that interface is:
     1. `open()`
