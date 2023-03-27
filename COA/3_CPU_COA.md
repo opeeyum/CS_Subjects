@@ -2,7 +2,8 @@
 Main component of computer system which performs operations and controls the system.
 
 - **CPU Cycle Time**: Time in which CPU can perform 1 smallest operation i.e micro-operation.
- $$ clockRate = {1 \over CPUCycleTime} $$
+
+ $$ clock\ Rate = {1 \over CPU\ Cycle\ Time} $$
 
 - **CPI**: Cycle per instruction, Number of cpu cycles required to execute an instruction.
 
@@ -31,7 +32,7 @@ Main component of computer system which performs operations and controls the sys
 
   CPI<sub>Avg</sub> = $498 \over 200$ = 2.49
 
-  In general CPI<sub>Avg</sub> = $\sum_{n=1}^{k}.n_i.CPI_i\over \sum_{n=1}^{k} n_i$
+  In general CPI<sub>Avg</sub> = $\sum_{n=1}^{k}\  n_i\  CPI_i\over \sum_{n=1}^{k}\  n_i$
 
   Where, $n_i$ = no. of instructions of type i.
 
@@ -43,10 +44,10 @@ Main component of computer system which performs operations and controls the sys
 CPU's performance is given by MIPS.
 
 - Suppose a CPU takes t-seconds. to execute n no. of instructions.
-- then, no. of instructions Executed in 1 sec. = $n (no.-of-instructions)\over t(total-execution-time)$ per sec
-- MIPS = $n \over t . 10^6$
+- then, no. of instructions Executed in 1 sec. = $n (no.\ of\ instructions)\over t(total\ execution\ time)$ per sec
+- MIPS = $n \over t\ 10^6$
 - t (execution time for n instructions) = n * CPI<sub>Avg</sub> * 1 cycle time
-- therefore, MIPS = $n \over n . CPI_Avg.CycleTime . 10^6$ = $1 \over CPI_Avg.CycleTime$
+- therefore, MIPS = $n \over n\ CPI_Avg\ CycleTime\ 10^6$ = $1 \over CPI_Avg\ CycleTime$
 - MIPS may provide false result for comparison of 2 processors, beacuse it doesn't consider complexity of instruction.
 - As type of instruction that computer dealt with may of different time complexity.
 - To solve this problem we have FLOPS (Floating Point operations Per Second).
