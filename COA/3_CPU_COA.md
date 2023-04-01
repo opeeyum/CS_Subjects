@@ -32,7 +32,7 @@ Main component of computer system which performs operations and controls the sys
 
   CPI<sub>Avg</sub> = $498 \over 200$ = 2.49
 
-  In general CPI<sub>Avg</sub> = $\sum_{n=1}^{k}\  n_i\  CPI_i\over \sum_{n=1}^{k}\  n_i$
+  In general CPI<sub>Avg</sub> = $\sum_{n=1}^k\  n_i\  CPI_i\over \sum_{n=1}^k\  n_i$
 
   Where, $n_i$ = no. of instructions of type i.
 
