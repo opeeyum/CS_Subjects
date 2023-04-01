@@ -1,4 +1,6 @@
-Question: Design the following functions using minimum number of 2 input NAND gate.
+Question: 
+
+Design the following functions using minimum number of 2 input NAND gate.
 
 1. f = $\overline A$
 2. f = A . B
@@ -23,7 +25,9 @@ Answers:
 > First reduce the expression then design it with logic gates.
 ```
 ```
-Question: Desing the following functions using minimum number of  input NOR gate.
+Question:
+
+Design the following functions using minimum number of input NOR gate.
 
 1. f = $\overline A$
 2. f = A . B
@@ -54,6 +58,7 @@ Answer:
 3
 
 Solution: 
+
 A . B + C = (A + C) . (B + C) 
 
 ```
@@ -80,16 +85,16 @@ Solution:
 ```
 ```
 Questions:
-1. $A$ ⊕ $1$ = $\overline A$
-2. $A$ ⊕ $0$ = $A$
-3. $A$ ⊕ $A$ = $0$
-4. $A$ ⊕ $\overline A $ = $1$
+1. $A ⊕ 1 = \overline A$
+2. $A ⊕ 0 = A$
+3. $A ⊕ A = 0$
+4. $A ⊕ \overline A = 1$
 
 Solutions:
-1.  $A$ ⊕ $1$ = $\overline{A}\ .\ 1$ + $A\ .\ \overline 1 $ = $\overline A$
-2. $A$ ⊕ $0$ = $\overline{A}\ .\ 0$ + $A\ .\ \overline 0 $ = $A$
-3. $A$ ⊕ $A$ = $\overline{A}\ .\ A$ + $A\ .\ \overline A $ = $0$
-4. $A$ ⊕ $\overline A $ = $\overline{A}\ .\ \overline A$ + $A\ .\ A $ = $1$
+1. $A ⊕ 1 = \overline A \ .\ 1 +\ A\ .\ \overline 1 = \overline A$
+2. $A ⊕ 0 = \overline A \ .\ 0 + A\ .\ \overline 0  = A$
+3. $A ⊕ A = \overline A \ .\ A + A\ .\ \overline A = 0$
+4. $A ⊕ \overline A = \overline A\ .\ \overline A + A\ .\ A = 1$
 ```
 ```
 Question:
