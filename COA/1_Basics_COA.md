@@ -58,14 +58,14 @@
    - Also known as **Princeton Architecture**.
    - Suggests storing Instruction and Data both in a memory unit.
 
-      <img src="../images/von_neumann_architecture.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>
+      <img src="../Images/von_neumann_architecture.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>
 
         #### Bottleneck in Von Neumann Architecture
         - Since components are connected with Single set of Bus, hence CPU can't access Data and Instruction simultaneously.
         - Connecting more bus won't work as Memory can only handle one request at a time.
   ### Havard Architecture
-   - Its a advancement to  Von Neumann's Architecture.
-   - Havard architecture suggests having two seperate memory units for instruction and data, so that CPU can fetch instruction and data simultaneously.
+   - Havard Architecture is an advancement to  Von Neumann's Architecture.
+   - Havard architecture suggests having two separate memory units for instruction and data respectively, so that CPU can fetch instruction and data simultaneously.
    - Its not practically implemented.
 
 ```
