@@ -116,3 +116,5 @@ Logic gates are the most basic building block of any digital system.
    |1|0|1|0|
    |1|1|0|0|
    |1|1|1|0|
+
+## rubbish thing
