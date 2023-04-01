@@ -132,14 +132,14 @@ Answer:
       6. **Address Register** (AR) / **Memory Address Register** (MAR): It is used to send address to memory.
       7. **Data Register** (DR) / **Memory Data Register** (MDR) / **Memory Buffer Register** (MBR): It is used to send data to memory (*memory write*) & to recieve data from memory (*memory read*).
 
-     Seudo Memory Read and Write operation:
+     Pseudo Memory Read and Write operation:
 
      Mem. Read - 
      1) CPU sends address to a memory using address bus.
      2) CPU enables read control signal for memory.
      3) Memory performs read operation & sends the data to CPU using data bus.
 
-     Mem. white -
+     Mem. write -
       1) CPU Sends address to memory using address bus.
       2) CPU sends data to memory using data bus.
       3) CPU Sends enabled write signal to memory.
