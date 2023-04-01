@@ -170,7 +170,7 @@ Answer:
 ## Micro-Operations
 - Smallest operation that CPU can execute in one step is known as Micro-Operation.
 - In other terms, The operations executed on values stored in registers.
-- Micor-Operations have symbolic notation to describe the opertaion known as **Regiater Transfer Language (RTL)**.
+- Mico-Operations have symbolic notation to describe the opertaion known as **Register Transfer Language (RTL)**.
 
 Sample Micro-Operation
 - Copy content of Program Counter into Address Register.
@@ -185,14 +185,14 @@ Sample Micro-Operation
 3. Memory Transfer: 
    Memory Transfer includes, Memory-Read and Memory-Write.
 
-   Memomry-Read: R*i* <- M[Memory Address], here address can come from any register or directly memory location can be specified.
+   Memory-Read: R*i* <- M[Memory Address], here address can come from any register or directly memory location can be specified.
 
    Memory-Write: M[Memory Address] <- R*i*
 
 ### Types of Micro-Operations
 1. Arithmetic Micro-Operation:
    - Addition `R1 <= R2 + R3`
-   - Substraction `R1 <- R2 - R3`
+   - Subtraction `R1 <- R2 - R3`
    - Complement `R1 <- R2'`
    - 2's Complement `R1 <- R2' + 1`
    - Addition with 2's Complement `R1 <- R2 + R3' + 1`
