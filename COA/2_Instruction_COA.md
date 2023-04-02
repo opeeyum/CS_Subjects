@@ -243,7 +243,7 @@ Instruction consists of two parts:
 -   OR, The target address in a branch-type instuctions.
 ### Instruction Cycle
 
-1. Instruction Fetch: Get Interuction form memory to CPU (Instruction Register). Program Counter Value is increased by Size of instruction loaded to instruction register.
+1. Instruction Fetch: Get Instruction from memory to CPU (Instruction Register). Program Counter Value is increased by Size of instruction loaded to instruction register.
 2. Instruction Decode
 3. Effective Address Calculation
 4. Operand Fetch
