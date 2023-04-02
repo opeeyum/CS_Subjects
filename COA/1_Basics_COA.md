@@ -155,7 +155,9 @@ Answer:
          > 32-bit and 64-bit in a system specifies the size of a single instruction.
 ```
 Question:
- A CPU has 24-bits instruction. A program starts at address 300 (in decimal). Which of the following is a legal program counter value?
+ A CPU has 24-bits instruction. 
+ A program starts at address 300 (in decimal). 
+ Which of the following is a legal program counter value?
 
 Options:
  a) 400
@@ -217,7 +219,10 @@ Sample Micro-Operation
 
 ```
 Question:
- Consider the following program segment. Here R1 and R2 are the general purpose register. Assume that the content of memory location 2000 is 23. All numbers are in decimal. After the excution of this program the value of memory location 2000 is?
+ Consider the following program segment.
+ Here R1 and R2 are the general purpose register. 
+ Assume that the content of memory location 2000 is 23. All numbers are in decimal. 
+ After the excution of this program the value of memory location 2000 is?
 
  Instructions         Operations
 
@@ -234,7 +239,8 @@ Answer:
 ```
 Gate 2007
 Info:
- Consider the following program segment. Here R1, R2 and R3 are the general purpose register.
+ Consider the following program segment. 
+ Here R1, R2 and R3 are the general purpose register.
 
  Instructions         Operations            Instruction Size (in words)
 
@@ -247,22 +253,27 @@ Info:
  BNZ LOOP            Branch on not Zero     2 
  HALT                Stop                   1
 
- Assume that the content of memory location 3000 is 10 and the content of the register R3 is 2000. The content of each of the memory locations from 2000 to 2010 is 100. The program is loaded from the memory location 1000. All the numbers are in decimal.
+ Assume that the content of memory location 3000 is 10 and the content of the register R3 is 2000. 
+ The content of each of the memory locations from 2000 to 2010 is 100. 
+ The program is loaded from the memory location 1000. All the numbers are in decimal.
 
 Questions:
- 1. Assume that the memory is word addressable. The number of memory references for accessing the data in executing the program completely is: 
+ 1. Assume that the memory is word addressable. 
+ The number of memory references for accessing the data in executing the program completely is: 
  a) 10
  b) 20
  c) 11
  d) 21
 
- 2. Assume that the memory is word addressable. After the execution of this program the content of memory location 2010 is?
+ 2. Assume that the memory is word addressable. 
+ After the execution of this program the content of memory location 2010 is?
  a) 100
  b) 101
  c) 102
  d) 110
 
- 3. Assume that the memory is byte addressable and teh word size is 32-bits. If the interrupt occurs during the execution of the instruction "INC R3", what return address is pushed onto the stack:
+ 3. Assume that the memory is byte addressable and teh word size is 32-bits. 
+ If the interrupt occurs during the execution of the instruction "INC R3", what return address is pushed onto the stack:
  a) 1005
  b) 1024
  c) 1020
@@ -284,7 +295,8 @@ Info:
   MOV m, Ri   - Moves the content of memory location m to register Ri
   MOV Ri, m   - Moves the content of register Ri to memory location m
 
-  The computer has only two registers and OP is either ADD or SUB. Consider the following basic block:
+  The computer has only two registers and OP is either ADD or SUB. 
+  Consider the following basic block:
 
   t1 = a + b
   t2 = c + d
@@ -292,7 +304,9 @@ Info:
   t4 = t1 - t3
 
 Question:
-  Assume that all operands are initially in memory. The final value of  the computation should be in memory. What is the minimum number of MOV instructions in the code generated for this basic block?
+  Assume that all operands are initially in memory. 
+  The final value of  the computation should be in memory. 
+  What is the minimum number of MOV instructions in the code generated for this basic block?
 
 Answer:
   3
