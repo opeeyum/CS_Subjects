@@ -82,5 +82,29 @@ CPU's performance is given by MIPS.
 ### Harwired Control Unit
 - Control Logic is implemented with Gates, flip-flops, decoders and other digital circuits.
 - **Advantage**: Can be optimized to product a faster mode of operation.
-- **Disadvnatage**: Rearrangeing the wires among various components is diffcult.
+- **Disadvnatage**: Rearranging the wires among various components is diffcult that is, it will be diffcult to update control logic.
+
+![](/Images/hardwired_control_unit.jpg)
+
+- How Control Unit generate control word?
+  - Control word will be generated for each cpu cycle.
+  - If an instruction takes n-cycles for execution then control unit needs to generate n-control words.
+  - Timing of each control word will be decided by the timing generator integrated to control unit. 
+  - After each instruction execution timing generator will be reset.
+  - A intruction-Timing table is created having control-word for each timing signal for all instruction.
+    ||I1|I2|I3|
+    |-|-|-|-|
+    |T1|...|...|...|
+    |T2|...|...|...|
+    |T3|...|...|...|
+
+### Micro-Programmed Control unit
+- Control logic is implemented with micro-programs.
+- In other words, All possible control words are stored in a memory (control memory) and based on the requirements the specific control word is fetched from memory.
+- Control memory resides inside CPU.
+- For each instruction control words are stored in a sequence.
+- **Advantages**: Updating the control logic is easy.
+- **Disadvantages**: Slower than hardwired control unit.
+- Execution Flow
+  ![](/Images/control_word_sequencing.jpg )
 

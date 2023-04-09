@@ -127,7 +127,7 @@ Answer:
       
           Conditions can be as follows:
           - Whether result is positive or negative.
-          - Result is Zeot or not, etc.
+          - Result is Zero or not, etc.
           > In Some CPU's Status register is considered as PSW while in others, combination of Accumulator and Status register is considered as PSW. 
       6. **Address Register** (AR) / **Memory Address Register** (MAR): It is used to send address to memory.
       7. **Data Register** (DR) / **Memory Data Register** (MDR) / **Memory Buffer Register** (MBR): It is used to send data to memory (*memory write*) & to recieve data from memory (*memory read*).
@@ -172,7 +172,7 @@ Answer:
 ## Micro-Operations
 - Smallest operation that CPU can execute in one step is known as Micro-Operation.
 - In other terms, The operations executed on values stored in registers.
-- Mico-Operations have symbolic notation to describe the opertaion known as **Register Transfer Language (RTL)**.
+- Micro-Operations have symbolic notation to describe the opertaion known as **Register Transfer Language (RTL)**.
 
 Sample Micro-Operation
 - Copy content of Program Counter into Address Register.

@@ -170,3 +170,12 @@ Logic gates are the most basic building block of any digital system.
 
      ![](/Images/xnor_property_1.jpg)
 > For an logic gate if get output as Input then it also termed as buffer gate, all logic gates can acts as buffer gate.
+
+- ### Minimum number of NAND, NOR gates for the following:
+   || NAND | NOR |
+   |:-:|:-:|:-:|
+   |NOT|1|1|
+   |AND|2|3|
+   |OR|3|2|
+   |XOR|4|5|
+   |XNOR|5|4|
