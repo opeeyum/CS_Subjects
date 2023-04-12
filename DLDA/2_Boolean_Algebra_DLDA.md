@@ -47,7 +47,8 @@
 ## Asorbtion Law
   1. A + AB = A
   2. A(A + B) = A
-
+```
+```
 Question:
 
 Minimize, $f = \overline AB + BC + AC$
@@ -62,7 +63,8 @@ Solution,
 1. $f = \overline AB + \overline ABC + ABC + AC$
 1. $f = \overline AB (1 + C) + AC(1 + B)$
 1. $f = \overline AB + AC$
-
+```
+```
 ## Consensus Theorem
   ![](/Images/consensus_theorem.jpg)
 
@@ -89,3 +91,7 @@ Solution,
     2. $1 + \overline A = 1$
        - Applying dual both side
        - $0 . \overline A = 0$
+- ### De-Morgans Theorem
+1. $\overline{A.B} = \overline A + \overline B$
+1. $\overline{A+B} = \overline A . \overline B$
+- Applicable for any numeber of input variable.
