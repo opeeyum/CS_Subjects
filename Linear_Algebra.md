@@ -3,21 +3,36 @@ Matrix is simply a multidimensional array.
 
 - **If m != n, Rectanguar Matrix**
 - **If m == n, Square Matrix**
+- Where m and n are number of row(s) and column(s) respectively.
 
 ### 1. Unit Matrix
 A ***Square Matrix*** whose all Principal Diagonal matrix are equal to 1, and remaing elements are 0.
+|1|0|0|
+|:-:|:-:|:-:|
+|0|1|0|
+|0|0|1|
 
 ### 2. Null Matrix 
 A ***Square or Non-Square*** (rectangular) matrix with all elements equal to 0 is termed as Null Or ***Zero*** matrix.
+|0|0|0|
+|:-:|:-:|:-:|
+|0|0|0|
+|0|0|0|
 
 ### 3. Row Matrix
 Matrix having only ***1 Row***.
+|1|1|1|
+|:-:|:-:|:-:|
 
 ### 4. Column Matrix
 Matrix having only ***1 Column***.
+|0|
+|:-:|
+|0|
+|0|
 
 ### 5. Sub-Matrix
-Any matrix obtained by omitting some rows and Columns from a given, (m X n) matrix 'A', is called Sub-matrix of 'A'.
+Any matrix obtained by omitting some Rows and Columns from a given, (m X n) matrix 'A', is called Sub-matrix of 'A'.
 
 #### Principal Sub-Matrix
 A ***Square Sub-matrix*** of a Square matrix 'A' is called Principal Sub-matrix, if its (sub-matrix) diagonal elements are also the diagonal elements of matrix 'A'.
@@ -29,18 +44,34 @@ Two or more matrices are said to be Equal if they are of:
 
 ## Types of Square Matrix
 ### 1. Upper Triangular Matrix
-A Square matrix, A = \[a *i j* ] is called an upper triangular matrix if a\[ i ]\[ j ] = 0, whenever i > j.
+A Square matrix, A = \[a *i j* ] is called an upper triangular matrix if a\[ i ]\[ j ] = 0, whenever i < j.
+|1|1|1|
+|:-:|:-:|:-:|
+|0|1|1|
+|0|0|1|
 
 ### 2. Lower Triangular Matrix
-A Square matrix, A = \[a *i j* ] is called a lower triangular matrix if a\[ i ]\[ j ] = 0, whenever i < j.
+A Square matrix, A = \[a *i j* ] is called a lower triangular matrix if a\[ i ]\[ j ] = 0, whenever i > j.
+|1|0|0|
+|:-:|:-:|:-:|
+|1|1|0|
+|1|1|1|
 
 - A Triangular matrix A = \[a *i j* ] *m x n* is called Strictly triangular matrix if a\[ i ]\[ i ] = 0, for i = 1, 2, ..., n.
 
 ### 3. Diagonal Matrix
-A Square matrix, A = \[a *i j* ]*n x n* whose elements above and below the principal diagonal are all zero.
+A Square matrix, A = \[a *i j* ]*n x n* whose principal diagonal elements are non-zero and all other elments other than principal diagonal are all zero.
+|1|0|0|
+|:-:|:-:|:-:|
+|0|2|0|
+|0|0|1|
 
 ### 4. Scalar Matrix
 A diagonal matrix whose diagonal elements are all equal is called a Scalar matrix.
+|2|0|0|
+|:-:|:-:|:-:|
+|0|2|0|
+|0|0|2|
 
 ## Addition of Matrices
 Addition of Matrices is only possible when matrices are ***Conformable***, i.e Same Size.
