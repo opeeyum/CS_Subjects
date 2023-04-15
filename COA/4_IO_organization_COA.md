@@ -50,3 +50,17 @@
     |More Addressing modes for I/O.|Less Addressing Mode for I/O.|
     |More number I/O devices can be connected.|Less I/O devices.|
   
+
+## Asychronous Data Transfer (Serial)
+- Data transfer between components of a computer system i.e between CPU and I/O, or between Memory and I/O, etc.
+- Synchronous data transfer is not implemented in computer system as read-write speed of computer components varies drastically, since clock rate needs to be set as per the component having lowest read-write speed, synchronous data transfer can degrade the performance.
+- In Asynchronous data transfer component work with dfferent clocks.
+- Computer components will having external-synchronization.
+- Whether computer supports synchrnous or asynchronous data transfer is mentioned in computer's architecture.
+
+## Serial VS Parallel data transfer.
+|Serial|Parallel|
+|:-|:-|
+|There will one line b/w components.|N-number of lines b/w components.|
+|1-bit at a time|n-bits at a time|
+|Cost Effective|Costly|
