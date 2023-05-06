@@ -92,3 +92,22 @@
   3. Once all rows from the "customers" table have been processed, the result set will be returned to the user.
 
 > **Note**: That the subquery will be executed once for each row in the "customers" table, so if there are a large number of customers, the query may take a significant amount of time to execute. It is generally a good practice to optimize queries with subqueries to avoid this type of performance issue.
+
+## Does aggregate function ignore null values in SQL?
+
+- In SQL, aggregate functions such as SUM, AVG, COUNT, MAX, and MIN typically ignore NULL values when they are calculating the result.
+
+- For example, consider a table called "sales" with columns "product_name" and "sale_amount". Suppose there are two rows in the table with the following values:
+
+  product_name   | sale_amount
+  -------------- | -----------
+  Product A      | 100
+  Product B      | NULL
+
+- If we want to calculate the total sales amount for all products, we could use the SUM function as follows:
+  ```sql
+  SELECT SUM(sale_amount) FROM sales;
+  ```
+- The result of this query would be 100, because the NULL value in the "sale_amount" column for "Product B" is ignored by the SUM function. If we had included the NULL value in the calculation, the result would have been NULL.
+
+- It's important to note that some aggregate functions, such as COUNT(*), do not ignore NULL values. When used with the * operator, COUNT will count all rows in the table, including those with NULL values. However, if you use COUNT with a specific column name (e.g. COUNT(sale_amount)), it will ignore NULL values in that column.

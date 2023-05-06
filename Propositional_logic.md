@@ -1,11 +1,13 @@
 # 1. What is a Proposition?
-Any statement that is either true or false, is termed as proposition.
+Any declarative statement that is either true or false, but not both is termed as proposition.
+
+[] Moon is made of cheese.
 
 There are two laws regarding proposition as follows:
-#### - Law of excluded middle
+- ### Law of excluded middle
 This law states that a proposition is required to be either true or false but not both.
 
-#### - Law of contradiction
+- ### Law of contradiction
 ```
 True = not False
 False = not True

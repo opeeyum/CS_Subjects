@@ -1,14 +1,5 @@
 # Graph Theory
 
-## Course Content
- 1. Basic definitions
- 2. Minimum Spanning trees
- 3. Matching
- 4. Vertex COver & edge Cover
- 5. Connectivity
- 6. Network flows
- 7. Planar Graphs & Colouring  
-
 ## Basic Definitions
  - ### What is Graph?
    Graph is a triplet consisiting vertex set V(G), an edge set E(G), and the relation that associates with each edge and two vertices (**not necessarily distinct**).
@@ -28,9 +19,11 @@
   Two or more edges having same end points are termed as Parallel edges.
 
 - ### Types of Graphs with Respect to Loops and Multi Edges
+  - #### Pseudo Graph
+    Graphs having both parallel-edges and loops.
 
   - #### Multi Graphs
-    Graphs having parallel-edges and loops.
+    Graphs having parallel-edges and no loops.
 
   - #### Simple Graph(s)
     Graph having neither loops nor parallel-edge(s).
@@ -39,9 +32,15 @@
   - Total number of edges incident(incoming) to any vertex is its degree.
   - In case of adjacency matrix representation, sum of values in row gives degree of vertex.
 
+  > Vertex having degree 0(Zero) are termed as **Isolated vertex** or **lone vertex**.
+
+  > Vertex having degree 1 are termed as **Pendent vertex**.
+
   > If degree of all the vertices in the graph is equal then graph is termed as **REGULAR GRAPH**.
 
   > If a complete graph have n-vertices then it must be ***n-1*** regular.
+
+  > In undirected graph an edge is present between exactly 2 vertices and the 2 vertices need not to be same.
 
 - ### Hand-Shaking Lemma
    In any graph G(V, E) the sum of degree of vertices is twice the number of edges.
